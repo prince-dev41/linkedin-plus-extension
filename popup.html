@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Linkedin Plus Popup </title>
+</head>
+<body>
+    <div class="main">
+        <h1>Linkedin Plus</h1>
+
+        <div class="seperator"></div>
+        <div class="toggle-container">
+            <label for="activateToggle" class="status">ON/OFF</label>
+            <div class="toggle-switch" id="toggle-switch">
+              <input type="checkbox" id="activateToggle">
+              <span class="slider"></span>
+            </div>
+        </div>
+
+        <div class="seperator"></div>
+
+        <form class="api" id="idForm" action="">
+            <label for="apikey">You API KEY</label>
+            <input type="text" id="apikey" name="apiKey" placeholder="Copy your Open Router API KEY here...">
+            <button id="saveBtn" type="submit">Save</button>
+        </form>
+
+        <div class="instructions">
+            <p>You can generate a free api key <a href="https://github.com/prince-dev41/jone-doe-portfolio" target="_blank" rel="noper" >here</a> </p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+    
+</body>
+</html>

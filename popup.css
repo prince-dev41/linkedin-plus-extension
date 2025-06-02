@@ -1,0 +1,140 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 300px;
+    padding: 15px;
+    margin: 0;
+}
+
+
+.seperator {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.main { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #333;
+  }
+
+  .status {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(0, 91%, 70%);
+    transition: .4s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(22px);
+  }
+  
+
+.instructions {
+    font-size: 13px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #2196F3;
+  }
+  
+  .instructions p {
+    margin: 0;
+    color: rgb(85, 85, 85);
+  }
+  
+  .api {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .api input {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgb(85, 85, 85);
+    height: 30px;
+    outline: none;
+    padding: 2.5px;
+  }
+  .api input::placeholder{
+    font-style: italic;
+  }
+  .api input:focus{
+    border: 1px solid #2196F3;
+  }
+  .api button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    outline: none;
+    background: rgb(247, 242, 242);
+    border-radius: 8px;
+    color: #333;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .api button:hover{
+    background-color: #fff;
+  }
